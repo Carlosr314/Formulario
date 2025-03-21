@@ -40,7 +40,7 @@ body{
     .titleandnav{
         display: flex;
         flex-direction: column;
-        margin-left: 15%;
+        margin-left: 35%;
         margin-top: 2px;
     }
     header nav{
