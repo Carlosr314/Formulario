@@ -1,0 +1,106 @@
+html{
+    background: linear-gradient(white,wheat);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+}
+    /*Encabezado*/
+    header{
+        background: white;
+        width: 100%;
+        display: flex;
+        margin: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    header h1{
+        text-align: center;
+        margin-top: 0%;
+        font: bold;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        place-self: center;
+        place-items: center;
+        flex-direction: column;
+    }
+    .ico {
+        margin-top: 2px;
+        padding: 0%;
+        position: relative;
+    }
+    .ico h4{
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0%;
+    }
+    .titleandnav{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        margin-top: 2px;
+    }
+    header nav{
+        position: relative;
+        place-items: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        margin-left: 25%;
+        margin-top: 0%
+        
+    }
+    header nav label{
+        margin-right: 30%;
+    }
+    header nav span{
+        padding-right: 2%;
+    }
+    /*Contenido Principal*/
+    main{
+        background: whitesmoke;
+        width: 90%;
+        position: relative;
+        display: flex;
+        place-self: center;
+        margin: auto;
+        padding: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 12px;
+        margin-bottom: 36px;
+    }
+    main p{
+        padding: 1%;
+        padding-bottom: 2px;
+        text-align: justify;
+        margin-top: 2%;
+        margin-bottom: 2px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    main form{
+        display: grid;
+        padding: 2%;
+        margin: 2%;
+    }
+    main label{
+        padding: 2%;
+        margin: 2%;
+    }
+    /*Pie de pagina*/
+    footer{
+        background: linear-gradient(coral,white);
+        position: fixed;
+        height: fit-content;
+        width: 100%;
+        bottom: 0%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    footer p{
+        padding: 0%;
+        margin: 0%;
+    }    

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1200px) and (min-height: 720px)" href="formstyles.css">
+    <link rel="stylesheet" media="screen and (max-width: 720px)" href="telefono.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+    <div class="ico">
+        <img src="Sin título.png">
+        <h4>UPTOS</h4>
+    </div>
+    <div class="titleandnav">
+        <h1>Registro</h1>
+        <nav>
+            <span>Inicio</span>
+            <!--Decidi poner el campo de buscador aqui porque me pareceria el sitio mas logico-->
+            <label for="buscador">
+                <input type="search" name="buscador" id="busca" placeholder="buscador">
+            </label>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <article>
+            <p>Para poder registrarte como estudiante en la Universidad Politecnica Terriotorial del Oeste de Sucre "Clodsobaldo Russian" y tener un usuario en el docline se requiere rellena los siguientes campos:</p>
+            <p>Los campos con * son obliagorios</p>      
+            <!-- Aqui empieza el formuliario -->
+            <form id="Registro">
+             <!-- Aqui se encuentra el label para el campo de los nombres, el cual contiene un input de tipo texto, requiered sirve para que se vuelva un campo obligatorio -->
+                 <label for="Registro">
+                    <span>Nombres*</span><br>
+                    <input required type="text" id="nombre” name="nombre">
+                </label>
+         <!-- Aqui se encuentra el label para el campo de los apellidos, el cual contiene un input de tipo texto -->
+                <label for="Registro">
+                    <span>Apellidos*</span><br>
+                    <input required type="text" id="Apeliido name="Apeliido">
+                </label>
+                <!-- Aqui se encuentra el label para el campo de sexo, imporatante que ambos inputs comparte el name para que asi esten vinculados, el cual contiene un input de tipo radio -->
+                <label required for="Registro">
+                    <p>Sexo*:</p>
+                    <input type="radio" name="Sexo" id="Hombre" value="Hombre" >
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="Sexo" id="Mujer" value="Mujer">
+                    <label for="Mujer">Mujer</label>
+                </label>
+                <!-- Aqui se encuentra el label para la fecha de nacimiento, , el cual contiene un input de tipo date-->
+                <label for="Registro">
+                    <span>Fecha de nacimiento*</span><br>
+                    <input required type="date" id="Fecha de Nacimiento" name="Fecha de Nacimiento"/>
+                </label>
+                <!-- Aqui se encuentra el label para la hora de nacimiento, , el cual contiene un input de tipo time-->
+                <label for="Registro">
+                    <span>Hora de Nacimiento</span><br>
+                    <input type="time">
+                </label>
+                <label for="Registro">
+                    <!-- Aqui se encuentra el label para la edad, , el cual contiene un input de tipo number-->
+                    <span>Edad*</span><br>
+                    <input required type="number" id="Edad" name="Edad">
+                </label>
+                <!-- Aqui se encuentra el label para el correo electronico , el cual contiene un input de tipo email, el placeholder sirve para poner como un texto de ejemplo dentro del campo-->
+                <label for="Registro">
+                    <span>Correo Electronico</span><br>
+                    <input required type="email" id="Correo" name="Correo" placeholder="Ej:uptos@gmail.com">
+                </label>
+                <!-- Aqui se encuentra el label para la contrasena, , el cual contiene un input de tipo password-->
+                <label for="Registro">
+                    <span>Contraseña*</span><br>
+                    <input required type="password" id="contraseña" name="contraseña">
+                </label>
+                <!-- Aqui se encuentra el label para el numero de telefono, , el cual contiene un input de tipo tel-->
+                <label for="Registro">
+                    <span>Número de telefono*</span><br>
+                    <input required type="tel" id="tlfn" name="telefono" placeholder="0414-7891234">
+                </label>
+                <!-- Aqui se encuentra el label para el color favorito, , el cual contiene un input de tipo color-->
+                <label for="Registro">
+                    <span>Color Favorito</span><br>
+                    <input  type="color" name="colorfavor" id="colorfavor">
+                </label>
+                <!-- Aqui se encuentra el label para los hobies, , el cual contiene varios inputs de tipo checkbox-->
+                <label for="Registro">
+                    <span>Hobbies:</span><br>
+                    <input type="checkbox" name="Libros" id="Libr" value="Libros">
+                    <span>Libros</span><br>
+                    <input type="checkbox" name="Music" id="Music" value="Musica">
+                    <span>Música</span><br>
+                    <input type="checkbox" name="Peli" id="Pelis" value="Peliculas">
+                    <span>Películas</span><br>
+                    <input type="checkbox" name="Series" id="Series" value="Series">
+                    <span>Series</span><br>
+                    <input type="checkbox" name="Videojuegos" id="Videojuegos" value="Videojuegos">
+                    <span>Videojuegos</span><br>
+                </label>
+                <!-- Aqui se encuentra el label para la pagina favorita, , el cual contiene un input de tipo url-->
+                <label for="Registro">
+                    <span>Pagina web favorita</span><br>
+                    <input type="url" id="pag" name="paginafavorita" placeholder="Ej: youtube.com">
+                </label>
+                <!-- Aqui se encuentra el label para la pagina favorita, , el cual contiene un tag de select con varias opciones, esto para la lista deplegable-->
+                <label for="Registro">
+                    <span>Carrera a elegir*</span><br>
+                    <select required name="Carreras" id="carr">
+                        <option value="Informatica">Informática</option>
+                        <option value="IngenieriaIndustrial">Ingeniería Industrial</option>
+                        <option value="Farmacia">Farmacia</option>
+                        <option value="Nutricion">Nutrición</option>
+                        <option value="Electronica">Electrónica</option>
+                    </select>
+                </label>
+            <!-- Aqui se encuentra el label para el espacio de texto donde el usario debe escribir una descripcion sobre si mismo, , el cual contiene un tag de textarea, al cual se le colocoa el atributo form con la misma de id del tag form para asi esten vinculados correctamente-->
+            <label for="Registro">
+                <span>Cuadro de texto, aqui debes poner una descripcion de ti</span><br>
+                <textarea form="Registro" name="descripcion" rows="10" cols="40">aqui debes poner una descripcion de ti</textarea>
+            </label>
+                <!-- Aqui se encuentra el label para la cedula, , el cual contiene un input de tipo archivo-->
+                <label for="Registro">
+                    <span>Inserte una imagen que muestre su cédula*</span><br>
+                    <input required type="file" id="img.png" name="cedulaimagen" >
+                </label>
+                <!-- Aqui se encuentra el label para el boton enviar, , el cual contiene un input de tipo submit-->
+                <label for="Registro">
+                    <span>Enviar</span>
+                    <input type="submit" value="Enviar" name="enviar" id="enviar">
+                </label>
+                <!-- Aqui se encuentra el label para el boton borrar todo, , el cual contiene un input de tipo reset-->
+                <label for="Registro">
+                    <span>Borrar todo</span>
+                    <input type="reset" value="Borrar" id="reset" name="reset">
+                </label>
+            </form>
+      </article>
+    </main>
+    <footer>
+        <p>Realizado por Carlos Romero</p>
+    </footer>
+</body>
+</html>
